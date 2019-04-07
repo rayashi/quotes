@@ -11,10 +11,14 @@ class QuotesViewController: UIViewController {
     
     let quotesManager = QuotesManager()
     var timer: Timer?
+    let config = Settings.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        applyColorScheme()
         prepareQuote()
     }
     
@@ -22,10 +26,18 @@ class QuotesViewController: UIViewController {
         prepareQuote()
     }
     
+    func applyColorScheme() {
+        view.backgroundColor = config.colorScheme == 0 ? .white : .black
+        lbQuote.textColor = config.colorScheme == 0 ? .black : .white
+        lbAuthor.textColor = config.colorScheme == 0 ? .black : .white
+    }
+    
     func prepareQuote() {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { timer in
-            self.showRandomQuote()
+        if config.autoRefresh {
+            timer = Timer.scheduledTimer(withTimeInterval: config.timeInterval, repeats: true) { timer in
+                self.showRandomQuote()
+            }
         }
         showRandomQuote()
     }
@@ -53,6 +65,5 @@ class QuotesViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
-
 }
 

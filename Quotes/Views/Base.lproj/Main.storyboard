@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NSK-6R-0qD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NSK-6R-0qD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-UA-UhN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b2A-4Z-emy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            <visualEffectView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-UA-UhN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b2A-4Z-emy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
@@ -48,13 +48,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fk2-UA-UhN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="00D-Ah-5ln"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2SW-kr-Gy1" secondAttribute="trailing" constant="40" id="6k2-J8-vhq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qlx-8c-C2b" secondAttribute="bottom" constant="10" id="7O1-E9-0M7"/>
                             <constraint firstItem="ye6-2K-mFK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BJX-mz-Bpe"/>
-                            <constraint firstItem="fk2-UA-UhN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EUB-5n-ho4"/>
+                            <constraint firstAttribute="bottom" secondItem="fk2-UA-UhN" secondAttribute="bottom" id="Dru-at-7Z8"/>
                             <constraint firstItem="fk2-UA-UhN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LhK-HS-WE2"/>
                             <constraint firstItem="2SW-kr-Gy1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="MaO-kl-22M"/>
                             <constraint firstItem="qlx-8c-C2b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OLE-lp-g15"/>
@@ -66,10 +65,8 @@
                             <constraint firstItem="ye6-2K-mFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cuU-sc-mpd"/>
                             <constraint firstItem="ye6-2K-mFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="phS-BD-dYB"/>
                             <constraint firstItem="2SW-kr-Gy1" firstAttribute="top" secondItem="ye6-2K-mFK" secondAttribute="bottom" constant="10" id="tiL-2J-cDh"/>
-                            <constraint firstItem="fk2-UA-UhN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="udZ-cf-IjP"/>
                             <constraint firstAttribute="bottom" secondItem="NSK-6R-0qD" secondAttribute="bottom" id="yPo-WH-dd2"/>
                             <constraint firstItem="NSK-6R-0qD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zRm-s7-UYP"/>
-                            <constraint firstItem="fk2-UA-UhN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zzw-6S-ZQ9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -223,6 +220,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lbTimeInterval" destination="z5D-BM-9CI" id="X2I-bD-2HN"/>
+                        <outlet property="scColorScheme" destination="uwn-bU-QNa" id="9o5-DQ-a7c"/>
                         <outlet property="slTimeInverval" destination="b0O-5i-nNL" id="DbR-ZB-lOZ"/>
                         <outlet property="swAutoRefresh" destination="qTM-Aw-2mZ" id="lZh-Ut-C8j"/>
                     </connections>
