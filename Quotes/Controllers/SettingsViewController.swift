@@ -11,7 +11,12 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "refresh"), object: nil, queue: nil) { (notification) in
+            self.showSettingsOnView()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         showSettingsOnView()
     }
     

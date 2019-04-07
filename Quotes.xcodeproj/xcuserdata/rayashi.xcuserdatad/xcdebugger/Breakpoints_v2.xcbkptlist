@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Quotes/Controllers/SettingsViewController.swift"
-            timestampString = "576338993.516313"
+            timestampString = "576352309.2049479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "changeAutoRefresh(_:)"
             landmarkType = "7">
          </BreakpointContent>

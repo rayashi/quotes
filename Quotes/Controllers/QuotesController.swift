@@ -15,6 +15,10 @@ class QuotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "refresh"), object: nil, queue: nil) { (notification) in
+            self.applyColorScheme()
+            self.prepareQuote()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

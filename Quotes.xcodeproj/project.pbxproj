@@ -18,8 +18,9 @@
 		5CD2483E2257A53100977DC9 /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2483D2257A53100977DC9 /* QuotesTests.swift */; };
 		5CD248492257A53100977DC9 /* QuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD248482257A53100977DC9 /* QuotesUITests.swift */; };
 		5CD248572257A7D100977DC9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD248562257A7D100977DC9 /* SettingsViewController.swift */; };
-		5CD2485A2257E8C800977DC9 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD248592257E8C800977DC9 /* quotes.json */; };
-		5CD2485C2257E8DE00977DC9 /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 5CD2485B2257E8DE00977DC9 /* Savoye LET.ttc */; };
+		5CF700DF225A442600F49A1D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5CF700DE225A442600F49A1D /* Settings.bundle */; };
+		5CF700E2225A452A00F49A1D /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CF700E0225A452A00F49A1D /* quotes.json */; };
+		5CF700E3225A452A00F49A1D /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 5CF700E1225A452A00F49A1D /* Savoye LET.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		5CD248482257A53100977DC9 /* QuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesUITests.swift; sourceTree = "<group>"; };
 		5CD2484A2257A53100977DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CD248562257A7D100977DC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		5CD248592257E8C800977DC9 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = quotes.json; path = "../../../../../Downloads/Arquivos Pensamentos/quotes.json"; sourceTree = "<group>"; };
-		5CD2485B2257E8DE00977DC9 /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Savoye LET.ttc"; path = "../../../../../Downloads/Arquivos Pensamentos/Savoye LET.ttc"; sourceTree = "<group>"; };
+		5CF700DE225A442600F49A1D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5CF700E0225A452A00F49A1D /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		5CF700E1225A452A00F49A1D /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Savoye LET.ttc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				5CD2482F2257A53100977DC9 /* Assets.xcassets */,
 				5CD248282257A52F00977DC9 /* AppDelegate.swift */,
 				5CD248342257A53100977DC9 /* Info.plist */,
+				5CF700DE225A442600F49A1D /* Settings.bundle */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -169,8 +172,8 @@
 		5CD248582257E88B00977DC9 /* Statics */ = {
 			isa = PBXGroup;
 			children = (
-				5CD2485B2257E8DE00977DC9 /* Savoye LET.ttc */,
-				5CD248592257E8C800977DC9 /* quotes.json */,
+				5CF700E0225A452A00F49A1D /* quotes.json */,
+				5CF700E1225A452A00F49A1D /* Savoye LET.ttc */,
 			);
 			path = Statics;
 			sourceTree = "<group>";
@@ -279,10 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD2485A2257E8C800977DC9 /* quotes.json in Resources */,
 				5CD248332257A53100977DC9 /* LaunchScreen.storyboard in Resources */,
+				5CF700E2225A452A00F49A1D /* quotes.json in Resources */,
 				5CD248302257A53100977DC9 /* Assets.xcassets in Resources */,
-				5CD2485C2257E8DE00977DC9 /* Savoye LET.ttc in Resources */,
+				5CF700E3225A452A00F49A1D /* Savoye LET.ttc in Resources */,
+				5CF700DF225A442600F49A1D /* Settings.bundle in Resources */,
 				5CD2482E2257A52F00977DC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
